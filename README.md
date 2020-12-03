@@ -1,11 +1,12 @@
-# cloudappi
+# Cloudappi-Front End
+Este codigo corresponde un SPA CRUD con Vue js
 
-## Project setup
+## Configuracion del proyecto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compila y recarga en caliente para el desarrollo
 ```
 npm run serve
 ```

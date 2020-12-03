@@ -27,7 +27,7 @@ export default {
   methods: {
     isActive(path) {
       if (path === "/") {
-        return this.$route.name == "Index";
+        return this.$route.name == "userIndex";
       }
       return this.$route.path.includes(path);
     },

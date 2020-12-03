@@ -9,7 +9,6 @@
           <router-view/>
         </div>
       </div>
-
       <!-- Hero footer: will stick at the bottom -->
       <app-footer></app-footer>
     </section>
@@ -30,4 +29,8 @@ export default {
 };
 </script>
 
-<style></style>;
+<style>
+.container{
+  width: 100%;
+}
+</style>;
