@@ -171,12 +171,14 @@ export default {
       if (this.$route.params.id) {
         this.$service.userService
           .update(this.$route.params.id, this.model)
-          .then(() => {});
+          .then(() => {
+            this.$router.push("/");
+          });
       } else {
-        this.$service.userService.create(this.model).then(() => {});
-        
+        this.$service.userService.create(this.model).then(() => {
+          this.$router.push("/");
+        });
       }
-      this.$router.push("/");
     },
   },
   mounted() {

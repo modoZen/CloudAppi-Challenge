@@ -15,7 +15,7 @@
         <div id="navbarMenuHeroC" class="navbar-menu">
           <div class="navbar-end">
             <span class="navbar-item">
-              <a class="button is-success is-inverted" href="/#">
+              <a class="button is-success is-inverted" href="https://github.com/modoZen/CloudAppi-Challenge">
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>

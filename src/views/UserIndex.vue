@@ -3,12 +3,12 @@
     <h1 class="title">Lista de usuarios</h1>
     <h2 class="subtitle">Visualización</h2>
     <div class="field has-text-right">
-      <a href="/create" class="button is-primary is-medium">
+      <router-link to="/Create" class="button is-primary is-medium">
         <span class="icon">
           <i class="fa fa-plus"></i>
         </span>
         <span>Crear nuevo</span>
-      </a>
+      </router-link>
     </div>
     <table class="table is-fullwidth">
       <thead>
@@ -38,12 +38,12 @@
           <td class="has-text-centered">{{ item.address.country }}</td>
           <td class="has-text-centered">{{ item.address.postalcode }}</td>
           <td class="has-text-centered">
-            <router-link :to="`/update/${item.id}`">
+            <router-link :to="`/Update/${item.id}`">
               <span class="icon"><i class="far fa-edit"></i></span>
             </router-link>
           </td>
           <td class="has-text-centered">
-            <a href="/" @click="eliminate(item.id)">
+            <a @click="eliminate(item)">
               <span class="icon"><i class="fas fa-trash-alt"></i></span>
             </a>
           </td>
@@ -67,14 +67,15 @@ export default {
   methods: {
     getAll() {
       this.$service.userService.getAll().then((r) => {
-        console.log(r.data);
         this.items = r.data;
       });
     },
-    eliminate(id){
-      this.$service.userService.eliminate(id).then(()=>{
+    eliminate(x) {
+      console.log(x.id);
+      this.$service.userService.eliminate(x.id).then(() => {
         console.log("usuario eliminado");
-      })
+        this.getAll();
+      });
     },
   },
   mounted() {

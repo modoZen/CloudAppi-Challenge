@@ -32,8 +32,6 @@ export default {
       return this.$route.path.includes(path);
     },
   },
-  mounted() {
-    console.log(this.$route);
-  },
+  mounted() {},
 };
 </script>

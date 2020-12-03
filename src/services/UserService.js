@@ -1,7 +1,6 @@
 export default(axios,baseUrl)=>{
     return{
         getAll(){
-            console.log("servicio operativo");
             return axios.get(`${baseUrl}api/user`);
         },
         create(params){

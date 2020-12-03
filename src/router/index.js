@@ -15,10 +15,10 @@ const routes = [
     path: '/About', name: 'About', component: About
   },
   {
-    path: '/create', name: 'UserCreate', component: userCreate
+    path: '/Create', name: 'UserCreate', component: userCreate
   },
   {
-    path: '/update/:id', name: 'UserUpdate', component: userUpdate
+    path: '/Update/:id', name: 'UserUpdate', component: userUpdate
   }
 ]
 
