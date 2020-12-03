@@ -1,37 +1,23 @@
-<template>
-  <div class="hero-head">
-    <header class="navbar">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item title">
-            CloudAppi-Task
-          </a>
-          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-        <div id="navbarMenuHeroC" class="navbar-menu">
-          <div class="navbar-end">
-            <span class="navbar-item">
-              <a class="button is-success is-inverted" href="https://github.com/modoZen/CloudAppi-Challenge">
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>Download</span>
-              </a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </header>
-  </div>
+<template lang="pug">
+.hero-head
+  header.navbar
+    .container
+      .navbar-brand
+        a.navbar-item.title CloudAppi-Task
+      #navbarMenuHeroC.navbar-menu
+        .navbar-end
+          span.navbar-item
+            a.button.is-success.is-inverted(
+              href="https://github.com/modoZen/CloudAppi-Challenge"
+            )
+              span.icon
+                i.fab.fa-github
+              span Download
 </template>
 
 <script>
 export default {
   name: "AppHeader",
-  components:{}
+  components: {},
 };
 </script>

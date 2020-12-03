@@ -1,24 +1,18 @@
-<template>
-  <div class="hero-foot">
-    <nav class="tabs is-boxed is-fullwidth">
-      <div class="container">
-        <ul>
-          <li :class="{ 'is-active': isActive('/') }">
-            <router-link to="/">
-              <span class="icon"><i class="fa fa-star"></i></span>
-              <span>Visualizar</span>
-            </router-link>
-          </li>
-          <li :class="{ 'is-active': isActive('/About') }">
-            <router-link to="/About">
-              <span class="icon"><i class="fa fa-star"></i></span>
-              <span>Sobre el SPA</span>
-            </router-link>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+<template lang="pug">
+.hero-foot
+  nav.tabs.is-boxed.is-fullwidth
+    .container
+      ul
+        li(:class="{ 'is-active': isActive('/') }")
+          router-link(to="/")
+            span.icon 
+              i.fa.fa-star
+            span Visualizar
+        li(:class="{ 'is-active': isActive('/About') }")
+          router-link(to="/About")
+            span.icon
+              i.fa.fa-star
+            span Sobre el SPA
 </template>
 
 <script>

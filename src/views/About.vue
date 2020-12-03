@@ -1,8 +1,7 @@
-<template>
-    <div>
-        <h1 class="title">Bievenido</h1>
-        <p>Esta es un SPA con CRUD</p>
-        <p>Nos permite leer, crear, actualizar y eliminar usuarios</p>
-    </div>
+<template lang="pug" >
+div
+  h1.title Bievenido
+  p Esta es un SPA con CRUD
+  p Nos permite leer, crear, actualizar y eliminar usuarios
 </template>
 
